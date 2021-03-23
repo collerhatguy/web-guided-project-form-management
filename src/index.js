@@ -18,6 +18,7 @@ function SimpleForm() {
   const [formValues, setFormValues] = useState(initialFormValues);
 
   const change = (evt) => {};
+  const submit = (evt) => {};
 
   return (
     <div className="container">
