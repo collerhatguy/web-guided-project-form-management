@@ -14,20 +14,20 @@ const initialFormValues = { petName: "", petType: "" };
 
 function SimpleForm() {
   // The State
-  const [pets, setPets] = useState(petsList)
-  const [formValues, setFormValues] = useState(initialFormValues)
+  const [pets, setPets] = useState(petsList);
+  const [formValues, setFormValues] = useState(initialFormValues);
 
   return (
-  <div className='container'>
-  <h1>Simple Form App</h1>
-{pets.map(pet, idx) => {
-  return (
-    <div>
-      {pet.petName} is a {pet.petType}
+    <div className="container">
+      <h1>Simple Form App</h1>
+      {pets.map((pet, idx) => {
+        return (
+          <div key={idx}>
+            {pet.petName} is a {pet.petType}
+          </div>
+        );
+      })}
     </div>
-  )
-}}
-  </div>
   );
 }
 
