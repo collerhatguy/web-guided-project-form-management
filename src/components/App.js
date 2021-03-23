@@ -43,7 +43,7 @@ export default function App() {
     axios
       .post("fakeapi.com", newFriend)
       .then((res) => {
-        debugger;
+        setFriends();
       })
       .catch((err) => {
         debugger;
