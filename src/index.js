@@ -20,6 +20,9 @@ function SimpleForm() {
   const change = (evt) => {
     const { name, value } = evt.target;
     setFormValues({ ...formValues, [name]: value });
+    // we don't know ahead of time if the user is typing into petName or petType
+    // [name]: is not an array literal"
+    // it will override whatever the value of name was previously in formValues
   };
   const submit = (evt) => {};
 
