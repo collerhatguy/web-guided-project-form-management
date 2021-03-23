@@ -16,11 +16,7 @@ export default function App() {
   const [friends, setFriends] = useState([]); // careful what you initialize your state to
 
   // 🔥 STEP 1 - WE NEED STATE TO HOLD ALL VALUES OF THE FORM!
-  const [formValues, setFormValue] = useState({
-    username: "",
-    email: "",
-    role: "",
-  });
+  const [formValues, setFormValues] = useState(initialFormValues);
 
   // fix this using the state hook
 
