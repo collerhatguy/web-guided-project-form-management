@@ -45,7 +45,7 @@ export default function App() {
         // 🔥 STEP 2 - The form component needs its props.
         //  Check implementation of FriendForm
         //  to see what props it expects.
-        values={friends}
+        values={formValues}
         update={updateForm}
         submit={submitForm}
       />
