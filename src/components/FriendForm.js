@@ -43,7 +43,7 @@ export default function FriendForm(props) {
           <input
             name="email"
             value={values.email}
-            type="text"
+            type="email"
             onChange={onChange}
           />
         </label>
