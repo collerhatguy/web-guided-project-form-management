@@ -24,7 +24,14 @@ function SimpleForm() {
     // [name]: is not an array literal"
     // it will override whatever the value of name was previously in formValues
   };
-  const submit = (evt) => {};
+  const submit = (evt) => {
+    const newPet = {
+      petName: formValues.petName.trim(),
+      petType: formValues.petType.trim(),
+    };
+    setPets(pets.concat(newPet));
+    setFormValues(initialFormValues);
+  };
 
   return (
     <div className="container">
