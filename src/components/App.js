@@ -9,7 +9,7 @@ const initialFormValues = {
   username: "",
   email: "",
   ///// DROPDOWN /////
-  role: "",
+  role: "instructor",
 };
 
 export default function App() {
