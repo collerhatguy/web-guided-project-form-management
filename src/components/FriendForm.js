@@ -34,6 +34,7 @@ export default function FriendForm(props) {
             name="username"
             onChange={onChange}
             value={values.username}
+            placeholder="type a username"
           />
         </label>
 
